@@ -1,0 +1,17 @@
+<%- include("partials/header"); %> 
+    <div class = "welcome">
+        <h1 class="welcomemsg">Welcome to my website.</h1>
+        <div style="margin-left: 10px;" class = 'picbox'>
+            <% for(var i = 0; i<picData.results.length; i++){ %>
+            
+            <div style="border: 2px solid red; width: 290px; background-color: <%= picData.results[i].color %>; margin: 10px; border-radius: 30px;" class='mypics'>
+                <img src="<%= picData.results[i].urls.small %>" style="width: 250px; height: 180px;" class = 'image'> 
+                <p style="color: white;">BY <%= picData.results[i].user.name %> on <%= picData.results[i].created_at %></p>
+                <p style="color: white;">Dimensions: <%= picData.results[i].width %> X <%= picData.results[i].height %></p>
+                <p style="color: white;">Likes: <%= picData.results[i].likes %></p>
+            </div>
+            
+            <% } %>
+        </div>
+    </div>
+<%- include("partials/footer"); %>

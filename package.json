@@ -1,0 +1,18 @@
+{
+  "name": "kpfresh24",
+  "version": "1.0.0",
+  "description": "This is my website from scratch",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamen Petkov",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20",
+    "request": "^2.88.2"
+  }
+}
